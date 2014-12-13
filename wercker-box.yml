@@ -20,9 +20,8 @@ script: |
   sudo apt-get install -y aptitude
   sudo aptitude update
   sudo aptitude safe-upgrade
-  sudo apt-cache search gcc
   sudo apt-get install software-properties-common python-software-properties
-  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   sudo apt-get update
   sudo apt-cache search gcc
   sudo apt-get install -qq gcc-4.9 g++-4.9 libstdc++-4.9-dev
