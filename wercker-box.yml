@@ -1,7 +1,7 @@
 name: cxx14
 version: 0.0.2
 type: main
-platform: ubuntu@14.04
+platform: ubuntu@14.10
 description: Wercker box for projects that require a C++14 toolchain.
 keywords:
   - C++
@@ -21,8 +21,10 @@ script: |
   sudo apt-get install -y aptitude
   sudo aptitude update
   sudo aptitude safe-upgrade
+  sudo do-release-upgrade -f DistUpgradeViewNonInteractive -m server -d
+  sudo aptitude update
+  sudo aptitude safe-upgrade
   sudo apt-get install software-properties-common python-software-properties
-  sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   sudo apt-get update
   sudo apt-cache search gcc
   sudo apt-get install -qq gcc-4.9 g++-4.9 libstdc++-4.9-dev
