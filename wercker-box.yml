@@ -28,5 +28,7 @@ script: |
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 48 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
   sudo apt-get install -qq autoconf automake libtool pkg-config
   sudo apt-get install -qq cmake
+  sudo apt-get install -qq git
   gcc --version | head -n1
   cmake --version
+  git --version
