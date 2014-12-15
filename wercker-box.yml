@@ -1,5 +1,5 @@
 name: cxx14
-version: 0.0.5
+version: 0.1.0
 type: main
 platform: ubuntu@14.10
 description: Wercker box for projects that require a C++14 toolchain.
