@@ -10,11 +10,10 @@ keywords:
   - Clang
   - GCC
 packages:
-  - cmake@2.8.12
-  - gcc@4.9.2
-  - libstdc++@4.9.2
+  - cmake@2.8.12.2
+  - gcc@4.9.1
   - clang-3.5.0
-  - git@1.9.1
+  - git@2.1.0
 script: |
   sudo apt-get update
   sudo apt-get install -y update-manager-core
